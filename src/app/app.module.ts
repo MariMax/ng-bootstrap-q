@@ -3,15 +3,16 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {
         path: '',
-        component: AppComponent,
+        component: HomeComponent,
       },
       {
         path: 'about',
